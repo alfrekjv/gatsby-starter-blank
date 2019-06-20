@@ -1,0 +1,86 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+$font1: "Source Sans Pro", sans-serif;
+$font2: "Merriweather", serif;
+
+// Color Palette
+$first: #483EFF;
+$second: #F60487;
+$third: #424242;
+$fourth: #F7F7F7;
+$fifth: #FFFFFF;
+$text: #666f78;
+
+.InnerPage {padding-top: 100px}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+    transition-delay: background-color 5000s, color 5000s;
+}
+
+$wrapper-width: pxtoem(1140, 16);
+
+body {
+	position: relative;
+    font-family: $font1;
+    margin: 0; padding: 0;
+    font-size: 1.4rem;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+    background: #FFFFFF;
+    color: $text;
+    line-height: 1.35;
+    letter-spacing: 0.46px;
+}
+
+.Centered {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+    line-height: 1.25;
+    color: $first;
+}
+
+h1 {
+    letter-spacing: 1px;
+    font-family: $font2;
+    font-size: 2.95em;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: $font1;
+    font-size: 2.45em;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: $font1;
+    font-size: 1.65em;
+    font-weight: 600;
+}
+
+p {
+    color: $text
+}
+
+a {
+    color: $first;
+
+    &:visited {color: $second;}
+
+    &:active {color: $third;}
+}

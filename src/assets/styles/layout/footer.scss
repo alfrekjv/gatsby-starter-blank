@@ -1,0 +1,16 @@
+.Footer {
+    color: #FFF;
+    background: $fifth;
+    text-align: center;
+
+    .Centered {padding: 16px}
+
+    .BrewedWithLove {
+        background: #34373a;
+        padding: 8px;
+
+        p {vertical-align: middle}
+
+        svg {max-width: 16px}
+    }
+}

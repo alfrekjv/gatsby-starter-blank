@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+// Layout Components
+@import "styles/layout/base.scss";
+@import "styles/layout/header.scss";
+@import "styles/layout/heroshot.scss";
+@import "styles/layout/footer.scss";
+
+// Pages
+@import "styles/pages/homepage.scss";
+
+// Mixins
+@import "styles/mixins/animations.scss";
