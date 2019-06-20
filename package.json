@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-portfolio",
-  "description": "Gatsby starter for portfolio",
+  "name": "gatsby-starter-blank",
+  "description": "Gatsby starter: Typescript + SASS",
   "license": "MIT",
   "version": "0.0.1",
   "scripts": {

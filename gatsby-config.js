@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    name: `Skillshare: How to Build your Online Portfolio from Scratch with Gatsby`,
-    tagline: `How to Build your Online Portfolio from Scratch with Gatsby`
+    name: `Gatsby starter: Typescript + SASS`,
+    tagline: `Gatsby starter: Typescript + SASS`
   },
   plugins: [
     {
