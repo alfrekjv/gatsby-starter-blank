@@ -5,7 +5,9 @@ export default class Header extends React.Component<{}, {}> {
     render() {
         return (
             <header className={styles.Header}>
-                Header
+                <div className={styles.Centered}>
+                    Header goes here
+                </div>
             </header>
         )
     }

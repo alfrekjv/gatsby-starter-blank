@@ -1,4 +1,4 @@
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
@@ -50,6 +50,7 @@ body {
 h1, h2,
 h3, h4,
 h5, h6 {
+    margin-bottom: 24px;
     line-height: 1.25;
     color: $first;
 }
@@ -57,20 +58,36 @@ h5, h6 {
 h1 {
     letter-spacing: 1px;
     font-family: $font2;
-    font-size: 2.95em;
+    font-size: 32px;
     font-weight: 800;
 }
 
 h2 {
     font-family: $font1;
-    font-size: 2.45em;
+    font-size: 30px;
     font-weight: 600;
+    color: $second;
 }
 
 h3 {
     font-family: $font1;
-    font-size: 1.65em;
+    font-size: 28px;
     font-weight: 600;
+    color: $third;
+}
+
+h4 {
+    font-family: $font1;
+    font-size: 26px;
+    font-weight: 400;
+    color: $text;
+}
+
+h5 {
+    font-family: $font1;
+    font-size: 24px;
+    font-weight: 600;
+    color: $text;
 }
 
 p {

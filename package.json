@@ -23,7 +23,7 @@
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-helmet": "^5.2.0",
-    "react-bootstrap": "^0.32.4",
+    "react-bootstrap": "^1.0.0-beta.10",
     "react-anchor-link-smooth-scroll": "^1.0.11",
     "typescript": "^3.1.6",
     "webpack": "^4.25.1"

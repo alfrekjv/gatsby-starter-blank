@@ -17,12 +17,20 @@ export default class Page extends React.Component<PageProps, {}> {
             <section className={styles.Container}>
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>Title</title>
+                    <title>GatsbyJS Blank Template by Juvasoft</title>
                     <link rel="canonical" href="https://juvasoft.com/" />
                 </Helmet>
                 <Header />
                 <div className={styles.Homepage}>
-                    <h1>Welcome!</h1>
+                    <div className={styles.Centered}>
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+
+                        <p>Hello world!</p>
+                    </div>
                 </div>
                 <Footer />
             </section>

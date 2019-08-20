@@ -7,10 +7,12 @@
 
     .BrewedWithLove {
         background: #34373a;
-        padding: 8px;
+        padding: 16px;
 
-        p {vertical-align: middle}
+        p {vertical-align: middle; color: white;}
 
         svg {max-width: 16px}
+
+        a {color: white;}
     }
 }
