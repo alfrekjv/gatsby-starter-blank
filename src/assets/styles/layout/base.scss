@@ -1,19 +1,21 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-$font1: "Source Sans Pro", sans-serif;
-$font2: "Merriweather", serif;
+$font1: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+Roboto, "Helvetica Neue", Arial, sans-serif;
+$font2: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+Roboto, "Helvetica Neue", Arial, sans-serif;
 
 // Color Palette
-$first: #483EFF;
-$second: #F60487;
-$third: #424242;
-$fourth: #F7F7F7;
+$first: #f181a7;
+$second: #578ac8;
+$third: #231f20;
+$fourth: #fabebd;
 $fifth: #FFFFFF;
 $text: #666f78;
+$buttonCTA: #37b558;
 
 .InnerPage {padding-top: 100px}
 
@@ -26,12 +28,13 @@ input:-webkit-autofill:active {
 }
 
 $wrapper-width: pxtoem(1140, 16);
+// $wrapper-width: 80vw;
 
 body {
 	position: relative;
     font-family: $font1;
     margin: 0; padding: 0;
-    font-size: 1.4rem;
+    font-size: 16px;
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -43,8 +46,17 @@ body {
 }
 
 .Centered {
-    width: 90%;
+    width: $wrapper-width;
     margin: 0 auto;
+
+    @media screen and (max-width: 1600px) {
+        width: auto;
+    }
+
+    @media screen and (min-width: 1500px) {
+        // width: 0%;
+        $wrapper-width: 1440px;
+    }
 }
 
 h1, h2,
@@ -58,7 +70,7 @@ h5, h6 {
 h1 {
     letter-spacing: 1px;
     font-family: $font2;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 800;
 }
 
@@ -90,9 +102,7 @@ h5 {
     color: $text;
 }
 
-p {
-    color: $text
-}
+p {color: $text}
 
 a {
     color: $first;
@@ -100,4 +110,54 @@ a {
     &:visited {color: $second;}
 
     &:active {color: $third;}
+}
+
+.ButtonPrimary {
+    background: $buttonCTA;
+    color: #FFF !important;
+    margin: 8px;
+    padding: 16px 24px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+    min-width: 200px;
+    cursor: pointer;
+    opacity: 0.85;
+
+    -webkit-transition: all .4s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+
+    &:hover {
+        background: $buttonCTA;
+        text-decoration: none;
+        opacity: 1;
+    }
+}
+
+.ButtonSecondary {
+    background: $third;
+    color: #FFF !important;
+    margin: 8px;
+    padding: 16px 24px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+    min-width: 200px;
+    cursor: pointer;
+    opacity: 0.85;
+
+    -webkit-transition: all .4s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+
+    &:hover {
+        background: $third;
+        text-decoration: none;
+        opacity: 1;
+    }
 }

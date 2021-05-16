@@ -3,16 +3,67 @@
     background: $fifth;
     text-align: center;
 
+    h3 {color: white; font-size: 18px;}
     .Centered {padding: 16px}
 
-    .BrewedWithLove {
+    .Logo {
         background: #34373a;
-        padding: 16px;
+        text-align: center;
+        padding: 32px;
 
-        p {vertical-align: middle; color: white;}
+        svg {width: 320px}
+    }
+
+    .Links {
+        background: #34373a;
+        padding: 24px;
+    
+        .Block {
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            width: 300px;
+
+            @media screen and (max-width: 600px) {
+                display: block;
+                width: auto;
+            }
+
+            &:nth-of-type(3) {
+                width: 500px;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            a {color: white}
+
+            input {
+                @media screen and (max-width: 600px) {
+                    width: 200px !important
+                }
+            }
+        }
+    }
+
+    .Social {
+        background: #34373a;
+        padding: 32px;
+
+        svg {color: white; width: 32px; margin: 0 8px}
+    }
+
+    .BrewedWithLove {
+        background: $fifth;
+        padding: 24px;
+
+        p {vertical-align: middle; color: $third;}
 
         svg {max-width: 16px}
 
-        a {color: white;}
+        a {color: $third;}
     }
 }

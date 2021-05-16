@@ -1,7 +1,139 @@
-.Header {
-    background: #f1f1f1;
-    position: fixed;
-    padding: 24px;
-    height: 80px;
+.Navbar {
     width: 100%;
+    padding: 24px;
+    text-align: center;
+    position: fixed;
+    background: #FFF;
+    z-index: 999;
+    // border-bottom: 1px solid #b5a6c3;
+
+    @media only screen and (max-width: 900px) { 
+        padding: 8px;
+    }
+
+    .Logo {
+        display: inline-block;
+        width: 20%;
+
+        @media only screen and (max-width: 900px) {
+            text-align: left;
+            width: 50%;
+        }
+
+        img, svg {max-width: 80%;}
+
+        svg.coretta__logo {
+            display: none;
+        
+            .tree__top {
+                fill: #000000;
+            }
+        }
+
+        svg {
+            polygon { 
+                &:nth-of-type(1) { // tree top
+                    transform: translateY(0);
+                    animation: slidedown 1s linear forwards;
+                }
+
+                &:nth-of-type(2) { // tree bottom
+                    transform: translateY(0);
+                    animation: slideup 1s linear;
+                }
+            }
+
+            path {
+                &:nth-of-type(1) {animation: fadein 1s linear; animation-delay: 0s} // F
+                &:nth-of-type(2) {animation: fadein 1s linear; animation-delay: 0.1s} // o
+                &:nth-of-type(3) {animation: fadein 1s linear; animation-delay: 0.2s} // g
+                &:nth-of-type(4) {animation: fadein 1s linear; animation-delay: 0.3s} // a
+                &:nth-of-type(5) {animation: fadein 1s linear; animation-delay: 0.4s} // t
+                &:nth-of-type(6) {animation: fadein 1s linear; animation-delay: 0.5s} // a
+                &:nth-of-type(7) {animation: fadein 1s linear; animation-delay: 0.6s} // flame 1
+                &:nth-of-type(8) {animation: fadein 1s linear; animation-delay: 0.6s} // flame 2
+                &:nth-of-type(9) {animation: fadein 1s linear; animation-delay: 0.6s} // flame 3
+            }
+        }
+    }
+
+    .Menu {
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+        padding-top: 2.5%;
+        width: 75%;
+
+        &.Hidden {
+            display: none;
+        }
+
+        @media only screen and (max-width: 900px) {
+            position: absolute;
+            background: #FFF;
+            text-align: center;
+            display: block;
+            width: 100%;
+            top: 75px;
+            right: 0;
+        }
+
+        a {
+            opacity: 0.85;
+            color: $third;
+            padding: 0 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+
+            @media only screen and (max-width: 900px) {
+                width: auto;
+                display: block;
+                line-height: 3.5;
+
+                &:hover {
+                    background: $first;
+                    color: white;
+                }
+            }
+
+            &:nth-of-type(1) {animation: fadein 1s linear; animation-delay: 0.5s}
+            &:nth-of-type(2) {animation: fadein 1s linear; animation-delay: 0.6s}
+            &:nth-of-type(3) {animation: fadein 1s linear; animation-delay: 0.7s}
+            &:nth-of-type(4) {animation: fadein 1s linear; animation-delay: 0.8s}
+
+            &:hover {
+                opacity: 1;
+                color: $first;
+                
+                @media only screen and (max-width: 900px) { 
+                    color: white;
+                }
+            }
+        }
+
+        .CartCount {
+            background: $first;
+            border-radius: 50%;
+            font-weight: 800;
+            font-size: 60%;
+            color: #fff;
+            padding: 8px;
+        }
+    }
+
+    .MobileMenu {
+        vertical-align: top;
+        text-align: right;
+        padding-top: 2.5%;
+        display: none;
+        width: 45%;
+
+        svg {max-width: 48px}
+
+        @media screen and (max-width: 900px) {
+            display: inline-block;
+        }
+    }
 }
