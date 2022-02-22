@@ -19,7 +19,7 @@
     "gatsby-plugin-react-svg": "3.1.0",
     "gatsby-plugin-sass": "5.7.0",
     "gatsby-plugin-typescript": "4.7.0",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.0",
     "axios": "0.26.0",
     "react": "17.0.2",
     "react-bootstrap": "2.1.2",
