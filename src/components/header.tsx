@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import * as styles from '../assets/styles.module.scss'
 import { Helmet } from 'react-helmet'
-import Navbar from './navbar.tsx'
+import Navbar from '../components/navbar'
 
 interface Props {
     link?: string
@@ -24,7 +24,7 @@ const Header = (props: Props) => {
     }, [props])
 
     return(
-        <header className={styles.Header}>
+        <header>
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>{title}</title>
@@ -64,13 +64,8 @@ const Header = (props: Props) => {
                 <meta property="og:image" content={coverImage} />
             </Helmet>
 
-            <section className={styles.Navbar}>
-                <div className={styles.Logo}>
-                    <a href="/">
-                        <img src={`/assets/images/logo.svg`} />
-                    </a>
-                </div>
-            </section>
+            <Navbar />
+
         </header>
     )
 

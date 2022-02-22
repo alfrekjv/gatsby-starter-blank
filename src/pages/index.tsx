@@ -6,7 +6,7 @@ import { default as Heroshot } from '../components/Heroshot'
 
 const Index = () => {
     return (
-        <section className={styles.Container}>
+        <section>
             <Header />
             <Heroshot />
             <div className={styles.Homepage}>
