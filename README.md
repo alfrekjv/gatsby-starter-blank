@@ -38,5 +38,5 @@ Now you are ready to use the Gatsby CLI tool to create your first Gatsby site. U
 
 1. Open up your terminal.
 2. Run `gatsby new project-name https://github.com/alfrekjv/gatsby-starter-blank`.
-3. Run `cd website`.
+3. Run `cd project-name`.
 4. Run `gatsby develop`.
